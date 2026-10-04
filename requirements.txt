@@ -1,0 +1,45 @@
+# Voice Clone Lab for Apple Silicon M3 Macs - Core Dependencies
+# Updated 2026-09-24
+
+# PyTorch with Metal support (for Apple Silicon)
+# Install BEFORE other packages that depend on torch
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Audio processing
+librosa>=0.10.0
+soundfile>=0.12.0
+pydub>=0.25.0
+
+# Speech recognition
+openai-whisper>=20231117
+faster-whisper>=0.10.0
+
+# Model utilities
+transformers>=4.30.0
+huggingface-hub>=0.16.0
+tqdm>=4.65.0
+
+# Web UI
+gradio>=3.50.0
+
+# PDF processing
+pypdf>=3.17.0
+pdfplumber>=0.10.0
+fitz>=0.0.1.dev2  # pymupdf alternative
+
+# PDF text extraction
+pdftotext>=2023.1.10  # or use: brew install poppler
+
+# Utilities
+numpy>=1.23.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+pandas>=1.5.0
+pyyaml>=6.0
+
+# Development (optional)
+black>=23.0.0
+flake8>=6.0.0
+pytest>=7.0.0
